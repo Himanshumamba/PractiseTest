@@ -1,0 +1,55 @@
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: black; 
+
+
+}
+
+.text {
+    text-align: center; 
+    z-index: 1; 
+    top: 10px; 
+    position: absolute;
+    font-size: 24px;
+    color: white; 
+    
+}
+
+
+
+.circle {
+    width: 30px; 
+    height: 30px; 
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.6;
+    top: 10px;
+    left: 0;
+    animation: moveCircle 6s infinite alternate; 
+}
+
+
+
+.animation {
+    position: relative;
+    width: 15%; 
+    height: 50px; 
+    background-color: black; 
+}
+
+@keyframes moveCircle {
+    from {
+        left: 0; 
+    }
+    to {
+        left: calc(100% - 80px); 
+
+    }
+}
+
+
+
